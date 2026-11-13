@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Request Document - Barangay Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="documents-header">
+
+        <p>DOCUMENT REQUEST</p>
+
+        <h1>Request a Barangay Document</h1>
+
+        <p>
+            Fill out the form below to submit your document request.
+        </p>
+
+    </header>
+<section class="request-section">
+<div id="success-message" class="success-message">
+
+    <h2>Request Submitted Successfully! 🎉</h2>
+
+    <p>
+        Your document request has been received.
+    </p>
+
+    <div id="request-summary">
+
+    </div>
+
+</div>
+    <form class="request-form" onsubmit="submitRequest(event)">
+        <label for="full-name">
+            Full Name
+        </label>
+
+        <input
+            type="text"
+            id="full-name"
+            placeholder="Enter your full name"
+        >
+
+        <label for="email">
+            Email Address
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email address"
+        >
+
+        <label for="document">
+            Select Document
+        </label>
+
+        <select id="document">
+
+    <option value="indigency">Barangay Indigency</option>
+    <option value="clearance">Barangay Clearance</option>
+    <option value="residency">Certificate of Residency</option>
+    <option value="business">Business Clearance</option>
+    <option value="good-moral">Certificate of Good Moral</option>
+    <option value="certification">Barangay Certification</option>
+
+</select>
+        <label for="purpose">
+            Purpose of Request
+        </label>
+
+        <textarea
+            id="purpose"
+            placeholder="Enter the purpose of your request"
+        ></textarea>
+
+        <button type="submit" class="primary-btn">
+            Submit Request
+        </button>
+
+    </form>
+
+</section>
+<script>
+
+    const params = new URLSearchParams(window.location.search);
+
+    const selectedDocument = params.get("document");
+
+    const documentSelect = document.getElementById("document");
+
+    if (selectedDocument) {
+        documentSelect.value = selectedDocument;
+    }
+
+</script>
+<script>
+
+    function submitRequest(event) {
+
+        event.preventDefault();
+
+        const fullName = document.getElementById("full-name").value;
+
+        const email = document.getElementById("email").value;
+
+        const documentName =
+            document.getElementById("document").options[
+                document.getElementById("document").selectedIndex
+            ].text;
+
+        const purpose = document.getElementById("purpose").value;
+
+        const requestNumber =
+    "REQ-" + Math.floor(1000 + Math.random() * 9000);
+
+        document.getElementById("request-summary").innerHTML = `
+
+        <p><strong>Request Number:</strong> ${requestNumber}</p>
+            <p><strong>Name:</strong> ${fullName}</p>
+
+            <p><strong>Email:</strong> ${email}</p>
+
+            <p><strong>Document:</strong> ${documentName}</p>
+
+            <p><strong>Purpose:</strong> ${purpose}</p>
+
+        `;
+
+        document.querySelector(".request-form").style.display = "none";
+
+        document.getElementById("success-message").style.display = "block";
+
+    }
+
+</script>
+</body>
+
+</html>

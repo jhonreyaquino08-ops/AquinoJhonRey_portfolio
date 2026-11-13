@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - Barangay Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="documents-header">
+
+        <p>ADMINISTRATION</p>
+
+        <h1>Barangay Admin Dashboard</h1>
+
+        <p>
+            Manage and monitor document requests from residents.
+        </p>
+
+    </header>
+<section class="admin-section">
+
+    <div class="admin-table-container">
+
+        <h2>Document Requests</h2>
+ 
+        <table class="request-table">
+
+            <thead>
+
+                <tr>
+                    <th>Request Number</th>
+                    <th>Resident Name</th>
+                    <th>Document</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>REQ-1001</td>
+                    <td>Juan Dela Cruz</td>
+                    <td>Barangay Indigency</td>
+                    <td>
+                        <span class="status pending">
+                            Pending
+                        </span>
+                    </td>
+                    <td>
+                        <button class="approve-btn" onclick="approveRequest(this)">
+    Approve
+</button>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+<script>
+
+    function approveRequest(button) {
+
+        const row = button.closest("tr");
+
+        const status = row.querySelector(".status");
+
+        status.textContent = "Approved";
+
+        status.classList.remove("pending");
+
+        status.classList.add("approved");
+
+        button.textContent = "Approved";
+
+        button.disabled = true;
+
+    }
+
+</script>
+</body>
+
+</html>

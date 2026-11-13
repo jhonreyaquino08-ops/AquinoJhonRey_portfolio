@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon Rey Aquino | BS Computer Science Student</title>
+    <meta name="description" content="Portfolio of Jhon Rey Aquino, a BS Computer Science student at Cavite State University Bacoor. Web projects, skills, resume, and certificates.">
+    <meta name="author" content="Jhon Rey Aquino">
+    <meta name="theme-color" content="#1c2520">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jhon Rey Aquino | BS Computer Science Student">
+    <meta property="og:description" content="Web projects, skills, resume, and certificates of a BS Computer Science student.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23e5ff69'/><text x='50' y='66' font-size='48' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%2310251b'>JR</text></svg>">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="#home" class="logo" aria-label="Jhon Rey, back to top">
+            <span class="logo-mark" aria-hidden="true">JR</span>
+            Jhon Rey
+        </a>
+
+        <button class="menu-toggle"
+                aria-expanded="false"
+                aria-controls="main-nav"
+                aria-label="Open menu">
+            ☰
+        </button>
+
+        <nav id="main-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#resume">Resume</a>
+            <a href="#projects">Projects</a>
+            <a href="#updates">Updates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <p class="home-label">WELCOME TO MY PORTFOLIO</p>
+
+            <h1 class="hero-title">HI, I'M <span><span class="name-first">JHON</span> REY</span></h1>
+
+            <div class="profile-picture">
+                <img src="images/profile.png"
+                     alt="Jhon Rey Aquino's profile picture"
+                     width="1770"
+                     height="1600">
+            </div>
+
+            <p class="hero-tagline">
+                BS COMPUTER SCIENCE | 3-2<br>
+                ASPIRING DEVELOPER BUILDING<br>
+                USEFUL TECHNOLOGY SOLUTIONS
+            </p>
+
+            <a href="#contact" class="hero-contact">Contact Me</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <div class="content">
+                <p>
+                    Hi! I'm <strong>Jhon Rey Aquino</strong>, a BS Computer Science
+                    student at Cavite State University – Bacoor City
+                    Campus, section 3-2. I build websites using HTML,
+                    CSS, and JavaScript, like this portfolio and the Barangay
+                    Portal, which I'm currently developing.
+                </p>
+
+                <p>
+                    As a Committee Head of the Alliance of Computer Scientists (ACs) and a
+                    former student assistant, I enjoy working with others. I aim to keep
+                    growing as a Computer Science student and develop useful technology
+                    solutions that can make a positive impact on others.
+                </p>
+            </div>
+
+            <div class="content skills">
+                <h3>My <span>Skills</span></h3>
+
+                <div class="skill-carousel-wrap">
+                    <div class="skill-carousel" aria-label="My skills">
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">💻</span>
+                            <h4>HTML, CSS, and JavaScript</h4>
+                            <p>Built the Barangay Portal, including its layout and pages.</p>
+                        </article>
+
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">🐍</span>
+                            <h4>Python</h4>
+                            <p>Learning to write programs in Python using VS Code and PyCharm.</p>
+                        </article>
+
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">🔀</span>
+                            <h4>Git and GitHub</h4>
+                            <p>Use Git and GitHub to store my code and publish projects, like my Tic-Tac-Toe game.</p>
+                        </article>
+
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">🔧</span>
+                            <h4>Hands-on technical skills</h4>
+                            <p>Electrical and electronics repair and installation, and welding.</p>
+                        </article>
+
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">🤝</span>
+                            <h4>Teamwork and leadership</h4>
+                            <p>Serve as a Committee Head of the Alliance of Computer Scientists and take part in student activities.</p>
+                        </article>
+
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">🧩</span>
+                            <h4>Problem-solving</h4>
+                            <p>Debug and fix errors in my own code, such as broken links and layout issues.</p>
+                        </article>
+
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">✨</span>
+                            <h4>Other Strengths</h4>
+
+                            <div class="chip-list">
+                                <span>Leadership</span>
+                                <span>Communication</span>
+                                <span>Organization</span>
+                                <span>Active Listener</span>
+                                <span>Creativity</span>
+                                <span>Flexibility</span>
+                                <span>Responsible</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="skill-controls">
+                        <button type="button" class="skill-btn" id="skill-prev" aria-label="Previous skill">‹</button>
+                        <div class="skill-dots"></div>
+                        <button type="button" class="skill-btn" id="skill-next" aria-label="Next skill">›</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2>My Resume</h2>
+
+            <div class="resume-grid">
+                <div class="content resume-card">
+                    <h3>Education</h3>
+
+                    <ul class="timeline">
+                        <li>
+                            <span class="timeline-date">BS Computer Science | 3-2</span>
+                            <h4>Cavite State University</h4>
+                            <p>Bacoor City Campus</p>
+                        </li>
+                        <li>
+                            <span class="timeline-date">August 2022 – June 2024</span>
+                            <h4>South East Asia Institute of Trade and Technology</h4>
+                            <p>Senior High School</p>
+                        </li>
+                        <li>
+                            <span class="timeline-date">June 2018 – May 2022</span>
+                            <h4>Eastern Bacoor National High School</h4>
+                            <p>Junior High School</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content resume-card">
+                    <h3>Experience</h3>
+
+                    <ul class="timeline">
+                        <li>
+                            <span class="timeline-date">2022 – 2024</span>
+                            <h4>Student Intern / Student Assistant</h4>
+                            <p>Gawaran Elementary School, Bacoor City, Cavite</p>
+
+                            <ul class="resume-bullets">
+                                <li>Assisted students during classroom and academic activities</li>
+                                <li>Guided and supported students in understanding lessons and tasks</li>
+                                <li>Demonstrated patience, responsibility, and good communication skills</li>
+                                <li>Maintained proper organization and discipline during activities</li>
+                                <li>Worked cooperatively with teachers and fellow students</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resume-actions">
+                <button type="button" class="btn" id="resume-open">View Full Resume</button>
+            </div>
+        </section>
+
+        <section id="projects">
+            <p class="home-label">MY WORK &amp; ACHIEVEMENTS</p>
+            <h2>Projects &amp; Certificates</h2>
+
+            <p class="projects-intro">
+                Here are some of my projects and achievements
+                as a Computer Science student.
+            </p>
+
+            <div class="tabs" role="tablist" aria-label="Portfolio categories">
+                <button type="button" class="tab active" role="tab" aria-selected="true" data-tab="projects"><span aria-hidden="true">💻</span>Projects</button>
+                <button type="button" class="tab" role="tab" aria-selected="false" data-tab="certificates"><span aria-hidden="true">🎓</span>Certificates</button>
+                <button type="button" class="tab" role="tab" aria-selected="false" data-tab="leadership"><span aria-hidden="true">🏅</span>Leadership</button>
+                <button type="button" class="tab" role="tab" aria-selected="false" data-tab="techstack"><span aria-hidden="true">🛠️</span>Tech Stack</button>
+            </div>
+
+            <div class="tab-panel active" id="panel-projects" role="tabpanel">
+                <div class="card-grid">
+                    <article class="pcard">
+                        <div class="pcard-img">
+                            <img src="images/barangay-portal.png"
+                                 alt="Screenshot of the Barangay Portal home page showing available documents"
+                                 loading="lazy">
+                        </div>
+                        <div class="pcard-body">
+                            <p class="pcard-meta">Web Development • In Development</p>
+                            <h3>Barangay Portal</h3>
+                            <p>My own idea, inspired by my frequent trips to the barangay hall for documents. Residents can browse documents such as Certificate of Residency, Indigency, and Barangay ID, and submit a request online, while an admin dashboard approves requests. Claim scheduling and a database are planned.</p>
+                            <div class="chip-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="project/barangay-portal/index.html"
+                               class="pcard-btn"
+                               target="_blank"
+                               rel="noopener noreferrer">View Prototype →</a>
+                        </div>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard-img">
+                            <img src="images/portfolio.jpeg"
+                                 alt="Screenshot of Jhon Rey's personal portfolio home page"
+                                 loading="lazy">
+                        </div>
+                        <div class="pcard-body">
+                            <p class="pcard-meta">Web Development</p>
+                            <h3>Personal Portfolio</h3>
+                            <p>The website you are viewing right now, showcasing my skills, resume, projects, and certificates.</p>
+                            <span class="pcard-btn pcard-btn-static">You are here</span>
+                        </div>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard-img">
+                            <img src="images/tic tac toe.jpeg"
+                                 alt="Screenshot of the Tic-Tac-Toe game showing the board and score tracker"
+                                 loading="lazy">
+                        </div>
+                        <div class="pcard-body">
+                            <p class="pcard-meta">Web Development • Game</p>
+                            <h3>Tic-Tac-Toe</h3>
+                            <p>A browser game I built in my first year using HTML, CSS, and JavaScript. Play against the computer or a friend. The computer tries to win and blocks the player's winning moves, and a score tracker counts wins and draws.</p>
+                            <a href="https://jhonreyaquino08-ops.github.io/tic-tac-toe/"
+                               class="pcard-btn"
+                               target="_blank"
+                               rel="noopener noreferrer">Play Game →</a>
+                        </div>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard-img pcard-img-multi">
+                            <img src="images/rfid-attendance-1.jpe"
+                                 alt="RFID attendance monitoring system project photo 1"
+                                 loading="lazy">
+                            <img src="images/rfid-attendance-2.jpe"
+                                 alt="RFID attendance monitoring system project photo 2"
+                                 loading="lazy">
+                            <img src="images/rfid-attendance-3.jpe"
+                                 alt="RFID attendance monitoring system project photo 3"
+                                 loading="lazy">
+                        </div>
+                        <div class="pcard-body">
+                            <p class="pcard-meta">Group Project • Team Leader</p>
+                            <h3>RFID Attendance Monitoring System</h3>
+                            <p>An RFID-based automated attendance system for CvSU-Bacoor City Campus. It detects RFID cards automatically, shows attendance information on an LCD screen, and stores records digitally, replacing slow and error-prone roll calls and logbooks. It applies embedded systems, serial communication, and real-time processing, and supports automated attendance evaluation and reliable data storage. I led our group in this project.</p>
+                            <div class="chip-list">
+                                <span>RFID</span>
+                                <span>Embedded Systems</span>
+                                <span>Serial Communication</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="panel-certificates" role="tabpanel">
+                <div class="card-grid">
+                    <article class="pcard">
+                        <div class="pcard-img">
+                            <img src="images/certificates/certificate-13.jpg" alt="Elementary certificate" loading="lazy">
+                        </div>
+                        <div class="pcard-body">
+                            <p class="pcard-meta">1 certificate</p>
+                            <h3>Elementary</h3>
+                            <p>Certificates I earned during elementary.</p>
+                            <a href="certificates.html#cert-elementary" class="pcard-btn">View →</a>
+                        </div>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard-img">
+                            <img src="images/certificates/certificate-03.jpg" alt="High school certificate" loading="lazy">
+                        </div>
+                        <div class="pcard-body">
+                            <p class="pcard-meta">3 certificates</p>
+                            <h3>High School</h3>
+                            <p>Certificates I earned during high school.</p>
+                            <a href="certificates.html#cert-highschool" class="pcard-btn">View →</a>
+                        </div>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard-img">
+                            <img src="images/certificates/certificate-02.jpg" alt="Senior high school certificate" loading="lazy">
+                        </div>
+                        <div class="pcard-body">
+                            <p class="pcard-meta">7 certificates</p>
+                            <h3>Senior High School</h3>
+                            <p>Certificates I earned during senior high school.</p>
+                            <a href="certificates.html#cert-seniorhigh" class="pcard-btn">View →</a>
+                        </div>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard-img">
+                            <img src="images/certificates/certificate-01.jpg" alt="College certificate" loading="lazy">
+                        </div>
+                        <div class="pcard-body">
+                            <p class="pcard-meta">5 certificates</p>
+                            <h3>College</h3>
+                            <p>Certificates I earned in college.</p>
+                            <a href="certificates.html#cert-college" class="pcard-btn">View →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="panel-leadership" role="tabpanel">
+                <div class="card-grid">
+                    <article class="pcard">
+                        <div class="pcard-img" aria-hidden="true">🎖️</div>
+                        <div class="pcard-body">
+                            <p class="pcard-meta">Alliance of Computer Scientists</p>
+                            <h3>Committee Head</h3>
+                            <p>Lead a committee of the Alliance of Computer Scientists (ACs) and take part in student activities.</p>
+                        </div>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard-img" aria-hidden="true">🍎</div>
+                        <div class="pcard-body">
+                            <p class="pcard-meta">OJT • 2022 – 2024</p>
+                            <h3>Student Intern / Assistant</h3>
+                            <p>Gawaran Elementary School, Bacoor City, Cavite. Assisted students during classroom and academic activities.</p>
+                        </div>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard-img">
+                            <img src="images/certificates/certificate-05.jpg" alt="Student officer certificate" loading="lazy">
+                        </div>
+                        <div class="pcard-body">
+                            <p class="pcard-meta">4 certificates</p>
+                            <h3>Student Officer</h3>
+                            <p>Recognitions I earned as a student officer.</p>
+                            <a href="certificates.html#cert-officer" class="pcard-btn">View →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="panel-techstack" role="tabpanel">
+                <div class="tech-grid">
+                    <div class="tech-item"><span class="tech-icon" aria-hidden="true">🌐</span><span class="tech-name">HTML</span></div>
+                    <div class="tech-item"><span class="tech-icon" aria-hidden="true">🎨</span><span class="tech-name">CSS</span></div>
+                    <div class="tech-item"><span class="tech-icon" aria-hidden="true">⚡</span><span class="tech-name">JavaScript</span></div>
+                    <div class="tech-item"><span class="tech-icon" aria-hidden="true">🐍</span><span class="tech-name">Python</span></div>
+                    <div class="tech-item"><span class="tech-icon" aria-hidden="true">🔀</span><span class="tech-name">Git &amp; GitHub</span></div>
+                    <div class="tech-item"><span class="tech-icon" aria-hidden="true">💻</span><span class="tech-name">VS Code</span></div>
+                    <div class="tech-item"><span class="tech-icon" aria-hidden="true">🛠️</span><span class="tech-name">PyCharm</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="updates">
+            <p class="home-label">KEEPING IT FRESH</p>
+            <h2>Updates &amp; Maintenance</h2>
+
+            <p class="projects-intro">
+                This portfolio grows with me. Here is how I keep it up to date
+                and what I plan to add next. Last updated: November 2026.
+            </p>
+
+            <div class="resume-grid">
+                <div class="content resume-card">
+                    <h3>Maintenance Plan</h3>
+
+                    <ul class="resume-bullets">
+                        <li><strong>After every project:</strong> add it within one week of finishing it.</li>
+                        <li><strong>After every award:</strong> upload new certificates and recognitions as I receive them.</li>
+                        <li><strong>Every month:</strong> test all links, tabs, and the phone layout, and compress new images before uploading.</li>
+                        <li><strong>Every semester:</strong> review my skills, tech stack, and resume, including my year level and contact details.</li>
+                        <li><strong>After big changes:</strong> check the site in Chrome, Edge, and Firefox.</li>
+                        <li><strong>Always:</strong> keep the code on GitHub, fix broken links as soon as I find them, and update the "Last updated" date.</li>
+                    </ul>
+                </div>
+
+                <div class="content resume-card">
+                    <h3>Coming Next</h3>
+
+                    <ul class="resume-bullets">
+                        <li><strong>Barangay Portal:</strong> add a database to store document requests and claim schedules.</li>
+                        <li><strong>Backend development:</strong> keep learning and practicing it.</li>
+                        <li><strong>New projects:</strong> publish them here as I apply what I learn.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <div class="content">
+                <p>
+                    Thank you for visiting my portfolio! I'm open to collaborating
+                    on web projects and to learning opportunities. Reach out
+                    through any of the links below.
+                </p>
+
+                <div class="contact-links">
+                    <a href="mailto:jhonreyaquino08@gmail.com" class="btn">Email Me</a>
+                    <a href="https://github.com/jhonreyaquino08-ops"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-outline">GitHub</a>
+                    <a href="https://www.facebook.com/share/1FBvsuuR6a/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-outline">Facebook</a>
+                </div>
+
+                <p class="contact-email">
+                    <a href="mailto:jhonreyaquino08@gmail.com">jhonreyaquino08@gmail.com</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="current-year">2026</span>
+            My Portfolio | Created by Jhon Rey
+        </p>
+    </footer>
+
+    <div class="resume-modal" id="resume-modal" hidden>
+        <button type="button" class="resume-close" id="resume-close" aria-label="Close resume">✕</button>
+
+        <div class="resume-modal-box" role="dialog" aria-modal="true" aria-label="Full resume">
+            <img src="images/resume.png" alt="Jhon Rey Aquino's resume">
+        </div>
+    </div>
+</body>
+</html>
